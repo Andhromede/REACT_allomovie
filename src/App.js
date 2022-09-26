@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 
@@ -18,7 +18,6 @@ const App = () => {
                   <Route index element={<HomeView />}/>
                   <Route path="/home" element={<HomeView/>}/>
                </Route>
-
             </Routes>
          </Router>
       </div>
