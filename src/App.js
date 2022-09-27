@@ -7,8 +7,10 @@ import './App.css';
 import BaseView from "./vues/BaseView";
 
 const HomeView = React.lazy(() => import("./vues/HomeView"));
+const DetailView = React.lazy(() => import("./vues/DetailView"));
 
-const App = () => {
+// const App = () => {
+   function App(){
    return (
 
       <div className="App">
@@ -17,6 +19,7 @@ const App = () => {
                <Route path="/" element={<BaseView />}>
                   <Route index element={<HomeView />}/>
                   <Route path="/home" element={<HomeView/>}/>
+                  <Route path="/detail/:id" element={<DetailView/>}/>
                </Route>
             </Routes>
          </Router>
